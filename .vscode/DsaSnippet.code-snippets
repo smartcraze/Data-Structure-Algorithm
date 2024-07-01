@@ -1,0 +1,131 @@
+{
+	"DSA Template": {
+		"prefix": "dsatemp",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"int main() {",
+			"    $8",
+			"    return 0;",
+			"}",
+		],
+		"description": "Insert a DSA template with notes"
+	},
+	"Inline Note": {
+		"prefix": "inote",
+		"body": [
+			"/** $1 */"
+		],
+		"description": "Insert an inline note"
+	},
+	"Block Note": {
+		"prefix": "bnote",
+		"body": [
+			"/**",
+			" * $1",
+			" */"
+		],
+		"description": "Insert a block note"
+	},
+	"Array Template": {
+		"prefix": "array",
+		"body": [
+			"vector<int> $1 = {$2};",
+			"for (int i = 0; i < $1.size(); ++i) {",
+			"    cout << $1[i] << ' ';",
+			"}",
+			"cout << endl;"
+		],
+		"description": "Insert a template for a vector array"
+	},
+	"Linked List Node": {
+		"prefix": "llnode",
+		"body": [
+			"class Node {",
+			"public:",
+			"    int data;",
+			"    Node* next;",
+			"",
+			"    Node(int val) {",
+			"        data = val;",
+			"        next = NULL;",
+			"    }",
+			"};"
+		],
+		"description": "Insert a linked list node definition"
+	},
+	"Stack Template": {
+		"prefix": "stack",
+		"body": [
+			"stack<int> $1;",
+			"$1.push($2);",
+			"while (!$1.empty()) {",
+			"    cout << $1.top() << ' ';",
+			"    $1.pop();",
+			"}"
+		],
+		"description": "Insert a template for a stack"
+	},
+	"Queue Template": {
+		"prefix": "queue",
+		"body": [
+			"queue<int> $1;",
+			"$1.push($2);",
+			"while (!$1.empty()) {",
+			"    cout << $1.front() << ' ';",
+			"    $1.pop();",
+			"}"
+		],
+		"description": "Insert a template for a queue"
+	},
+	"Tree Node": {
+		"prefix": "treenode",
+		"body": [
+			"struct TreeNode {",
+			"    int data;",
+			"    TreeNode* left;",
+			"    TreeNode* right;",
+			"    TreeNode(int val) : data(val), left(nullptr), right(nullptr) {}",
+			"};"
+		],
+		"description": "Insert a tree node definition"
+	},
+	"TODO Comment": {
+		"prefix": "todo",
+		"body": [
+			"// TODO: $1"
+		],
+		"description": "Insert a TODO comment"
+	},
+	"IMPORTANT Comment": {
+		"prefix": "icc",
+		"body": [
+			"// IMPORTANT: $1"
+		],
+		"description": "Insert an IMPORTANT comment"
+	},
+	"node creation head ref":{
+		"prefix": "head",
+		"body": [
+			"Node* head"
+		],
+		"description": "node refrence to pass parameter"
+
+	},
+	"Print Linked List": {
+    "prefix": "printll",
+    "body": [
+        "void printLinkedList(Node* head) {",
+        "    Node* current = head;",
+        "    while (current != NULL) {",
+        "        cout << current->data << \" \";",
+        "        current = current->next;",
+        "    }",
+        "    cout << endl;",
+        "}"
+    ],
+    "description": "Print elements of a linked list"
+}
+
+}
