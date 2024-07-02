@@ -1,72 +1,39 @@
-
-### C ###
-# Prerequisites
-*.d
-
-# Object files
+# Ignore binary files
+*.exe
 *.o
-*.ko
-*.obj
-*.elf
-*.ini
-# Linker output
-*.ilk
-*.map
-*.exp
+*.out
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignore build directories
+/build/
+/bin/
+/obj/
+/Debug/
+/Release/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Ignore system files
+.DS_Store
+desktop.ini
 
-# Shared objects (inc. Windows DLLs)
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# Ignore compiled files
+*.class
 *.dll
 *.so
-*.so.*
 *.dylib
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-### C++ ###
-# Prerequisites
-
-# Compiled Object files
-*.slo
-
-# Precompiled Headers
-
-# Compiled Dynamic libraries
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-desktop.ini
+# Ignore other unwanted files
+Thumbs.db
