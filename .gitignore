@@ -8,7 +8,7 @@
 *.ko
 *.obj
 *.elf
-
+*.ini
 # Linker output
 *.ilk
 *.map
@@ -69,3 +69,4 @@ dkms.conf
 
 # Compiled Static libraries
 *.lai
+desktop.ini
