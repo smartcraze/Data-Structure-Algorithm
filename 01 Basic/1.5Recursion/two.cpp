@@ -19,6 +19,7 @@ void sum2(int n)
 }
 
 // Recursive way of calculating the sum of first N Natural Numbers:
+// parametrised one 
 void sum3(int i, int sum)
 {
     // base case
@@ -29,6 +30,11 @@ void sum3(int i, int sum)
     }
     sum3(i - 1, sum+i);
 }
+// functional ways
+int sum4(int n){
+    if(n==0) return 0;
+    return n+sum4(n-1);
+}
 int main()
 {
     int n;
@@ -37,7 +43,7 @@ int main()
     // sum(n);
     // sum2(n);
     sum3(n, 0);
-    
+    sum4(n);
 
     return 0;
 }
