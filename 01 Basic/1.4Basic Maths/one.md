@@ -156,3 +156,82 @@ void printDivisor(int n)
 - 2 is a prime no
 - 3 is a prime no
   
+
+# gcd /hcf
+
+-  greatest common divisor of the number is know 
+-  gcd of 2 no is the largest no which is a factor of both the no
+- gcd =1 // default 
+1 loop till the smallest nu between n1 & n2
+time complexity o(minimum(n1,n2));
+2 check the each no that divide both no 
+3 if it is divide then it is the gcd
+gcd==i
+
+```c++
+// to optimise if we run the loop from backward it wil have the better complexity not sure might be the worst case would be min of n1,n2
+n1=20
+n2=40
+gcd =1
+for(i=min(n1,m2); i>=1; i--){
+    if(n1%i==0 && n2%i==0){
+        gcd=i;
+        break
+    }
+}
+
+```
+
+
+
+# euclidean Algorithm 
+- its states that gcd of two no 
+- ` gcd(a,b) == gcd((a-b),b) ` where a>b;
+make it smaller and smaller till one of them is 0;
+
+```python
+// sometime it could not be the better linear complexity for ex do with (52,10)
+gcd(a,b) == gcd((a-b),b)
+ex = n1=20
+n2=15
+gcd(20,15) == gcd(5,15) 
+make the greater no in front 
+gcd(15,5) == gcd(10,5)
+gcd(10,5) == gcd(5,5)
+gcd(5,5) == gcd(0,5)
+the moment when one number become the zero the number no is the gcd 
+5 is the gcd 
+
+```
+
+so the best version is keep the module instead subtracting the 52-10 5 times right 
+we could 52%10==2
+
+`gcd(a,b)== gcd((a%b),b)`
+
+greater % smaller --> one is 0 the other is the gcd 
+
+
+
+```c++
+void gcd(int n1,int n2){
+    while (n1>0 && n2>0)
+    {
+        if (n1 > n2){
+            n1 = n1 % n2;
+        }else{
+            n2 = n2 % n1;
+        }
+
+    }
+    if(n1==0){
+        cout << n2 << endl;
+    }else cout << n1 << endl;
+    
+}
+
+```
+[smartcraze](https://smartcraze.online) portfolio check it out !!
+
+- [ ] Practice 
+- **Note:** Thanks you striver

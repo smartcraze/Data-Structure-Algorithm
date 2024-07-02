@@ -83,6 +83,25 @@ void printDivisor(int n)
     sort(ls.begin(),ls.end());
     for(auto it : ls) cout << it << " ";
 }
+
+
+// gcd and lcm 
+void gcd(int n1,int n2){
+    while (n1>0 && n2>0)
+    {
+        if (n1 > n2){
+            n1 = n1 % n2;
+        }else{
+            n2 = n2 % n1;
+        }
+
+    }
+    if(n1==0){
+        cout << n2 << endl;
+    }else cout << n1 << endl;
+    
+}
+
 int main()
 {
     int n;
@@ -96,3 +115,6 @@ int main()
     ArmstrongNo(n);
     return 0;
 }
+
+
+// completed finally took 3 hours to understand 
