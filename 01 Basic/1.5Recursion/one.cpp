@@ -46,10 +46,18 @@ void backTrack(int i,int n){
 
 }
 // print the prime no in backward using backt tacking 
-
-void Backprime(){
-
+int checkprime(int n) {
+    if (n <= 1) return 0;
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) return 0;
+    }
+    return 1;
 }
+
+
+// void Backprime(int n){
+
+// }
 
 int main() {
     // part 2;
@@ -61,7 +69,8 @@ int main() {
     // countNo(1,n);
     // OppCount(5,n);
     // backTrack(n,n);
-    Backprime();
+    // Backprime();
+    checkprime(n);
 
 
 
