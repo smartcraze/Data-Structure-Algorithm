@@ -90,6 +90,7 @@ int main()
     // reverse();
     // string s ="madam";
     // cout<<isPalindrome(0,s);
-    cout << fibonacci(n);
+    cout << fibonacci(8);
+    
     return 0;
 }
