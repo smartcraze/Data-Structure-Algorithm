@@ -30,7 +30,22 @@ void bubble_sort(int n,int arr[]){
         if(didswap==0) break;
     }
 }
+//insertion sort
 
+void insertion_sort(int arr[],int n){
+    for(int i=0;i<n-1;i++){
+        int j=i;
+        while (j>=0 && arr[j] > arr[j+1])
+        {
+            int temp = arr[j];
+            arr[j] = arr[j+1];
+            arr[j+1] = temp;
+            j--;
+        }
+    }
+    // worst tc--> o(n^2)
+    // best tc--> o(n)
+}
 
 int main() {
     int n;
@@ -38,14 +53,14 @@ int main() {
     cin >> n;
 
     int arr[n];
+        cout << "Enter element";
     for (int i = 0; i < n; i++) {
-        cout << "Enter element " << i << ": ";
         cin >> arr[i];
     }
 
     // selection_sort(n, arr);
     // bubble_sort(n,arr);
-    
+    insertion_sort(arr,n);
 
     cout << "After sorting: ";
     for (int i = 0; i < n; i++) {
