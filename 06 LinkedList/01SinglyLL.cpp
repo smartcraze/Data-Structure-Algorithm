@@ -49,10 +49,28 @@ bool Search(Node* head, int key){
     }
     return false;    
 }
+
+Node* removehead(Node* head){
+    if(head==nullptr) return head;
+    Node* temp = head;
+    head=head->next;
+    delete(temp);
+    return head;
+}
+void print(Node* head){
+    Node* temp = head;
+    while(temp){
+        cout<<temp->data<<"->";
+        temp = temp->next;
+    }
+    cout << endl;
+}
 int main(){
     vector<int> arr ={ 2,5,8,7,55};
     Node *head = Convertarr2ll(arr);
-    Node * temp =head;
+    head =removehead(head);
+    print(head);
+    
     
 
 }
