@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 using namespace std;
 class Node{
     public:
@@ -87,16 +87,12 @@ Node* deleteelement(Node* head ,int el){
         head = head->next;
         delete(temp);
         return head;
-    }
-    
+    } 
     Node* temp =head;
     Node* prev =nullptr;
-
     while (temp!=nullptr)
-    {
-        
+    { 
         if(temp->data==el){
-            //previous ka next jo ki woh element k hoga wooh prev ka next ka next point karega basically hum prev se k ko chhod kar usken next se connect karna 
             prev->next = prev->next->next;
             free(temp);
             break;
