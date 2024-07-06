@@ -151,7 +151,33 @@ Node *InsertAtTail(Node *head, int value)
     return head;
 };
 
+Node* insertatpositionk(Node* head,int val ,int k){
+    if(head==nullptr){
+        if(k==1){
+            return new Node(val);
+        }
+    }
+    if (k==1)
+    {
+        return new Node(val,head);
+    }
 
+    Node* temp = head;
+    int cnt = 0;
+    while (temp != nullptr){
+        cnt++;
+        if(cnt==k-1){
+            Node* x = new Node(val,temp->next);
+            temp->next = x;
+            break;
+        }
+        
+        temp = temp->next;
+
+    }
+        return head;
+
+}
 
 int main()
 {
@@ -165,9 +191,11 @@ int main()
     //  NOTE: insertion
     //  32:42
     // head = insertathead2(head, 990);
-    head = InsertAtTail(head, 75);
+    // head = InsertAtTail(head, 75);
+    head = insertatpositionk(head, 75,4);
+
     print(head);
 
-    
+
     return 0;
 }
