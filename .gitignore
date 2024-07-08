@@ -23,31 +23,13 @@ desktop.ini
 
 # Ignore IDE specific files
 .vscode/
+
+
+
+
+.vscode/
 .idea/
-*.suo
-*.user
-*.userossc
-*.sln.docstates
+desktop.ini
 
-# Ignore compiled files
-*.class
-*.dll
-*.so
-*.dylib
-
-# Ignore other unwanted files
-Thumbs.db
-
-
-
-
-
-
-# Mistake Which Suraj you dont have to do 
-## Did not practice dsa in correct way
-## Avoid repeatitive question
-## Did not do project dev , deploy that project ;
-## Become All Rounder not only cp;
-## I was kind of introvert , try to explore community ;
 
 # Happy coding !!

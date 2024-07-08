@@ -137,7 +137,8 @@ Node *InserBeforeHead(Node *head, int value)
     }
     if (head->next != NULL)
     {
-        Node *newhead = new Node(value, head, nullptr);
+        Node *newhead = 
+        new Node(value, head, nullptr);
         head->back = newhead;
         return newhead;
     }
