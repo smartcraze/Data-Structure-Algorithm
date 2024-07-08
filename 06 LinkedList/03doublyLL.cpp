@@ -38,7 +38,7 @@ Node *convertArr2Dll(vector<int> &arr)
     {
         Node *temp =
             new Node(arr[i],
-                     nullptr, prev);
+                    nullptr, prev);
 
         prev->next = temp;
 
@@ -141,41 +141,57 @@ Node *InserBeforeHead(Node *head, int value)
         head->back = newhead;
         return newhead;
     }
-    // return head;
 }
+
 Node *InsertBeforeTail(Node *head, int value)
 {
-    Node* temp = head;
+    Node *temp = head;
     if (head == NULL)
     {
         return new Node(value);
     }
-    while (temp->next!=NULL)
+    while (temp->next != NULL)
     {
-        
+        temp = temp->next;
     }
-    
+    Node *prev = temp->back;
+
+    Node *newTail = new Node(value, temp, prev);
+    prev->next = newTail;
+    temp->back = newTail;
+    return head;
+}
+
+Node *InsertAtKthNode(Node *head, int value, int k)
+{
+    if (k == 1)
+    {
+        return new Node(value, head, nullptr);
+    }
+    Node *temp = head;
+    int cnt = 0;
+    while (temp != nullptr)
+    {
+        cnt++;
+        if (k == cnt)
+        {
+            Node *newnode = new Node(value, temp, temp->back);
+            temp->back->next = newnode;
+            temp->back = newnode;
+            return head;
+        }
+        temp = temp->next;
+    }
+    return head;
 }
 
 int main()
 {
-    vector<int> arr = {1, 2, 3, 4, 5, 6, 0};
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7};
     Node *head = convertArr2Dll(arr);
-    // deleteNode(head->next);
-    head = InserBeforeHead(head, 0);
-    head = InsertBeforeTail(head, 29);
+    head = InsertAtKthNode(head, 69, 5);
 
     print(head);
 
     return 0;
 }
-
-// all comments
-
-// insertion ->
-// head(before)
-// tail
-// kth
-// node
-// head(after)
-// head = Removekthnode(head,5);
