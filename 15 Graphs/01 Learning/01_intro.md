@@ -28,3 +28,34 @@
 
 ### edge weight 
 - edge weight is a number associated with an edge that represents some property of the edge
+
+
+# graph representation in c++
+- Input n - nodes
+- Input m - edges
+- Input edge list
+
+
+## store 
+- matrix way 
+- adjacency list way
+- adjacency matrix way
+ 
+
+space NxN
+
+in adjanceny list way we store in vector
+- vector of vector
+- vector of list
+ spcae 2E
+
+# way to store weighted graph
+- matrix way
+- adjacency list way
+- adjacency matrix way
+- heap way
+- priority queue way
+- vector of pair way
+- vector of vector of pair way   // most used
+
+int // pair vector jab define karenge
