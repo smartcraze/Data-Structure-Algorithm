@@ -37,7 +37,7 @@
 			"}",
 			"cout << endl;"
 		],
-		"description": "Insert a template for a vector array"
+		"description": "Insert  a template for a vector array"
 	},
 	"Linked List Node": {
 		"prefix": "llnode",
