@@ -5,13 +5,6 @@
   - graph can be open also like binary tree
   - cycles means start and end node are the same 
 
-
-
-
-
-
-
-
 ##### paths 
 
 - path is a sequence of edges that connect a sequence of vertices where every vertex appears exactly once
