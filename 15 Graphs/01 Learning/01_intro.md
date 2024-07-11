@@ -52,3 +52,11 @@ in adjanceny list way we store in vector
 - vector of vector of pair way   // most used
 
 int // pair vector jab define karenge
+
+
+## visited array
+- visited array is used to keep track of which nodes have been visited
+
+- it is an array of boolean values, where each value represents whether the corresponding node has been visited
+- it is initialized to false for all nodes
+- when a node is visited, its corresponding value in the visited array is set to true
