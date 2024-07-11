@@ -60,3 +60,15 @@ int // pair vector jab define karenge
 - it is an array of boolean values, where each value represents whether the corresponding node has been visited
 - it is initialized to false for all nodes
 - when a node is visited, its corresponding value in the visited array is set to true
+
+# Traversal Technique
+- Breadth First Search (BFS)
+- Depth First Search (DFS)
+
+## BFS 
+- BFS is a graph traversal algorithm that starts at the root node and explores all the neighboring nodes at
+the same depth level before moving on to the nodes at the next depth level
+- it is used to find the shortest path between two nodes in a graph
+- it is also used to find all the nodes that are reachable from a given node in a graph
+- it is implemented using a queue data structure  
+- it is a level order traversal of the graph
