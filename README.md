@@ -40,5 +40,5 @@ Each topic in the playlist is accompanied by detailed explanations, code impleme
 Striver's DSA playlist provides a comprehensive learning resource for mastering data structures and algorithms using C++. By dedicating time and effort to study each topic thoroughly and practicing coding problems, you can enhance your problem-solving skills and excel in competitive programming contests and technical interviews.
 
 Happy coding!
-
+day 10 out of house 
 
