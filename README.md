@@ -42,3 +42,4 @@ Striver's DSA playlist provides a comprehensive learning resource for mastering 
 Happy coding!
 day 10 out of house 
 
+day 16 didnot do anythign 
